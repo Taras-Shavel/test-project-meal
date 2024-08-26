@@ -1,0 +1,34 @@
+.container {
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+
+}
+h1, p{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.container > img {
+    width: 400px;
+    height: 500px;
+}
+.info{
+    width: 100vw;
+    height: 700px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ingredient {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.styleTR{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}

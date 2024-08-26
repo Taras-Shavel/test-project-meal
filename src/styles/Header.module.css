@@ -1,0 +1,34 @@
+.container {
+    width: 100vw;
+    height: 80px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.blockButtons {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blockButtons>button {
+    width: 120px;
+    height: 30px;
+}

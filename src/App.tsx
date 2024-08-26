@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { InfoMeal, MainPage, Meals } from './components';
+import { Route, Routes } from 'react-router-dom';
+import { MainLayouts } from './layouts';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
+      <Routes>
+        <Route path='/category' element={<MainLayouts/>}>
+        <Route index  element={<MainPage/>}/>
+        <Route path='/category/:id' element={<Meals/>}/>
+        <Route path='/category/meals/:id' element={<InfoMeal/>}/>
+        </Route>
+      </Routes>
+      
     </div>
   );
 }
